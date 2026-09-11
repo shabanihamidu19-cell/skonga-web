@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://skonga-web.vercel.app/sitemap.xml
