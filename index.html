@@ -10,6 +10,7 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://skonga-web.vercel.app/">
 <link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
 <meta property="og:title" content="SKONGA AI — Student Assistant">
 <meta property="og:description" content="AI study assistant for Tanzanian secondary students. Not a school ERP.">
 <meta property="og:url" content="https://skonga-web.vercel.app/">
@@ -23,16 +24,18 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 20% 0%,rgba(155,92,255,.13),transparent 30rem),var(--bg);color:var(--text);line-height:1.6}
 a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
 .container{width:min(calc(100% - 32px),var(--max));margin-inline:auto}
 header{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);background:rgba(13,15,20,.78);border-bottom:1px solid var(--line)}
 .nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800}
-.brand-mark{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),var(--cyan));font-weight:900}
+.brand-logo{width:40px;height:40px;border-radius:12px;object-fit:cover;box-shadow:0 0 20px rgba(155,92,255,.35)}
 .nav-links{display:none;gap:18px;color:var(--muted);font-size:.92rem}
 .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 18px;font-weight:600;font-size:.92rem;border:1px solid transparent}
 .btn-primary{background:linear-gradient(135deg,var(--purple),#6d3dff);color:#fff}
 .btn-secondary{background:rgba(255,255,255,.04);border-color:var(--line)}
 .hero{padding:64px 0 48px;text-align:center}
+.hero-logo{width:88px;height:88px;border-radius:22px;margin:0 auto 18px;object-fit:cover;box-shadow:0 12px 40px rgba(155,92,255,.35)}
 .hero h1{font-size:clamp(2rem,6vw,3.2rem);letter-spacing:-.04em;line-height:1.1;margin:12px 0 16px}
 .gradient{background:linear-gradient(135deg,#b979ff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{max-width:560px;margin:0 auto 20px;color:var(--muted)}
@@ -51,9 +54,12 @@ h2{font-size:clamp(1.4rem,4vw,2rem);letter-spacing:-.03em;margin-bottom:12px}
 .avatar{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--cyan))}
 .role{color:#b979ff;font-size:.85rem;font-weight:600;margin-bottom:8px}
 .download-box{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px 22px;text-align:center}
+.download-logo{width:64px;height:64px;border-radius:16px;margin:0 auto 14px;object-fit:cover;box-shadow:0 8px 28px rgba(155,92,255,.3)}
 .update-note{max-width:520px;margin:16px auto 0;text-align:left;background:rgba(155,92,255,.08);border:1px solid rgba(155,92,255,.22);border-radius:14px;padding:12px 14px;color:var(--muted);font-size:.86rem}
 #apkVersionPill{margin-top:10px;color:var(--cyan);font-weight:600;font-size:.85rem}
 footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:.88rem}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.footer-logo{width:28px;height:28px;border-radius:8px;object-fit:cover}
 .footer-links{display:flex;flex-wrap:wrap;gap:14px;margin:12px 0}
 @media(min-width:640px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:1fr 1fr 1fr}.nav-links{display:flex}}
 </style>
@@ -61,7 +67,10 @@ footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);f
 <body>
 <header>
 <div class="container nav">
-<a class="brand" href="#"><span class="brand-mark">S</span><span>SKONGA AI</span></a>
+<a class="brand" href="#">
+<img class="brand-logo" src="assets/icon.png" width="40" height="40" alt="SKONGA AI logo">
+<span>SKONGA AI</span>
+</a>
 <nav class="nav-links">
 <a href="#features">Features</a>
 <a href="#contact">Contact</a>
@@ -74,6 +83,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);f
 <main>
 <section class="hero">
 <div class="container">
+<img class="hero-logo" src="assets/icon.png" width="88" height="88" alt="SKONGA AI">
 <div class="eyebrow">AI-powered student assistant</div>
 <h1>Study smarter with <span class="gradient">SKONGA AI.</span></h1>
 <p>A student-focused AI assistant for Tanzania secondary learners — ask questions, scan problems, and study with Form + combination awareness.</p>
@@ -127,6 +137,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);f
 <section id="download">
 <div class="container">
 <div class="download-box">
+<img class="download-logo" src="assets/icon.png" width="64" height="64" alt="SKONGA AI">
 <div class="eyebrow">Get SKONGA</div>
 <h2>Start studying smarter.</h2>
 <p class="muted">Download the latest <strong style="color:var(--text)">signed release APK</strong>.</p>
@@ -143,7 +154,10 @@ footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);f
 </main>
 <footer>
 <div class="container">
+<div class="footer-brand">
+<img class="footer-logo" src="assets/icon.png" width="28" height="28" alt="">
 <strong style="color:var(--text)">SKONGA AI</strong>
+</div>
 <div class="footer-links">
 <a href="#team">Team</a>
 <a href="#contact">Contact</a>
