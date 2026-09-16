@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d0f14">
+<title>Docs — SKONGA AI App Documentation</title>
+<meta name="description" content="SKONGA AI documentation: install the Android APK, first-run Form and Combination, chat and scan features, Pro mobile-money payments, updates, and troubleshooting.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://skonga-web.vercel.app/docs.html">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<meta property="og:title" content="SKONGA AI Docs">
+<meta property="og:description" content="How to install, use, pay for Pro, and update SKONGA AI.">
+<meta property="og:url" content="https://skonga-web.vercel.app/docs.html">
+<meta property="og:image" content="https://skonga-web.vercel.app/assets/icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "SKONGA AI App Documentation",
+  "description": "User documentation for the SKONGA AI Android student assistant.",
+  "author": { "@type": "Organization", "name": "KCL Platform TZ" },
+  "publisher": { "@type": "Organization", "name": "SKONGA AI", "logo": { "@type": "ImageObject", "url": "https://skonga-web.vercel.app/assets/icon.png" } },
+  "mainEntityOfPage": "https://skonga-web.vercel.app/docs.html",
+  "about": { "@type": "SoftwareApplication", "name": "SKONGA AI", "operatingSystem": "Android" }
+}
+</script>
+<style>
+:root{--bg:#0d0f14;--card:#151925;--text:#f5f7ff;--muted:#9ba3b7;--line:rgba(255,255,255,.08);--purple:#9b5cff;--cyan:#35d9ff;--max:860px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 15% 0%,rgba(155,92,255,.12),transparent 28rem),var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+img{display:block;max-width:100%}
+.container{width:min(calc(100% - 32px),var(--max));margin-inline:auto}
+header{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);background:rgba(13,15,20,.78);border-bottom:1px solid var(--line)}
+.nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--text);text-decoration:none}
+.brand-logo{width:40px;height:40px;border-radius:12px;object-fit:cover;box-shadow:0 0 20px rgba(155,92,255,.35)}
+.nav-links{display:none;gap:16px;font-size:.9rem}
+.nav-links a{color:var(--muted);text-decoration:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:11px 16px;font-weight:600;font-size:.9rem;border:1px solid transparent;text-decoration:none;color:#fff;background:linear-gradient(135deg,var(--purple),#6d3dff)}
+.layout{display:grid;gap:28px;padding:40px 0 64px}
+@media(min-width:860px){.layout{grid-template-columns:200px 1fr;align-items:start}.toc{position:sticky;top:80px}}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.toc h2{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:#b979ff;margin-bottom:12px}
+.toc a{display:block;color:var(--muted);font-size:.88rem;padding:6px 0;text-decoration:none}
+.toc a:hover{color:var(--text)}
+.eyebrow{color:#b979ff;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+h1{font-size:clamp(1.7rem,4vw,2.3rem);letter-spacing:-.03em;margin-bottom:12px}
+h2{font-size:1.2rem;margin:36px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+h2:first-of-type{border-top:none;margin-top:20px}
+h3{font-size:1rem;margin:18px 0 8px;color:var(--text)}
+p,li{color:var(--muted);margin-bottom:10px;font-size:.95rem}
+ul,ol{padding-left:1.25rem;margin-bottom:14px}
+code,.mono{font-family:ui-monospace,monospace;font-size:.85em;background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px;color:#b979ff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:14px 0}
+.card.tip{border-color:rgba(53,217,255,.3);background:rgba(53,217,255,.06)}
+.card.warn{border-color:rgba(255,107,138,.35);background:rgba(255,107,138,.06)}
+.steps{counter-reset:step}
+.steps li{margin-bottom:10px}
+footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:.88rem}
+.footer-links{display:flex;flex-wrap:wrap;gap:14px;margin:12px 0}
+.footer-links a{color:var(--muted)}
+@media(min-width:640px){.nav-links{display:flex}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="/">
+<img class="brand-logo" src="assets/icon.png" width="40" height="40" alt="SKONGA AI">
+<span>SKONGA AI</span>
+</a>
+<nav class="nav-links">
+<a href="/">Home</a>
+<a href="/about.html">About</a>
+<a href="/docs.html">Docs</a>
+<a href="/faq.html">FAQ</a>
+<a href="/#download">Get APK</a>
+</nav>
+<a class="btn" href="/#download">Get APK</a>
+</div>
+</header>
+
+<div class="container layout">
+<aside class="toc" aria-label="On this page">
+<h2>On this page</h2>
+<a href="#install">1. Install</a>
+<a href="#first-run">2. First run</a>
+<a href="#chat">3. Chat & study</a>
+<a href="#form-combo">4. Form & Combination</a>
+<a href="#pro">5. Pro & payments</a>
+<a href="#updates">6. Updates</a>
+<a href="#browser">7. Browser</a>
+<a href="#troubleshoot">8. Troubleshooting</a>
+</aside>
+
+<main>
+<div class="eyebrow">Documentation</div>
+<h1>SKONGA AI app docs</h1>
+<p>How to install, set up, study, unlock Pro, and keep the app updated. This is product documentation — for company identity see <a href="/about.html">About</a>; for short answers see <a href="/faq.html">FAQ</a>.</p>
+
+<h2 id="install">1. Install (Android APK)</h2>
+<ol class="steps">
+<li>Open the official download page: <a href="/#download">skonga-web.vercel.app/#download</a> or <a href="https://github.com/shabanihamidu19-cell/skonga-ai-v1/releases">GitHub Releases</a>.</li>
+<li>Download the latest <strong style="color:var(--text)">signed</strong> file (name like <code>SKONGA-AI-release.apk</code>). Prefer release over old debug builds.</li>
+<li>On your phone, open the downloaded file.</li>
+<li>If Android asks, allow install from this source (browser or file manager).</li>
+<li>Confirm install. Open <strong style="color:var(--text)">SKONGA AI</strong>.</li>
+</ol>
+<div class="card tip">
+<strong style="color:var(--text)">Play Protect</strong>
+<p style="margin:8px 0 0">Apps outside Google Play may show a one-time warning. Use only the official SKONGA release link. Choose install if you trust that source.</p>
+</div>
+
+<h2 id="first-run">2. First run</h2>
+<ul>
+<li>On first launch you may be asked for <strong style="color:var(--text)">Form</strong> (1–6).</li>
+<li>For Form 5 or 6, you can optionally pick your <strong style="color:var(--text)">subject combination</strong> (tahasusi).</li>
+<li>You can skip combination; you can change profile later in settings where available.</li>
+<li>Grant camera permission only if you use scan features.</li>
+</ul>
+
+<h2 id="chat">3. Chat & study features</h2>
+<ul>
+<li><strong style="color:var(--text)">AI Chat</strong> — type a question; get explanations aimed at secondary level.</li>
+<li><strong style="color:var(--text)">Scan & Solve</strong> — capture a written question when the feature is available in your build.</li>
+<li>Use clear questions (topic + what you don’t understand) for better answers.</li>
+<li>Free tier has soft limits; when you hit the limit, the app guides you to Pro.</li>
+</ul>
+
+<h2 id="form-combo">4. Form & Combination</h2>
+<p>Personalization helps the assistant stay on relevant subjects.</p>
+<ul>
+<li><strong style="color:var(--text)">Form 1–4</strong> — form level is enough for general secondary help.</li>
+<li><strong style="color:var(--text)">Form 5–6</strong> — choose combination (e.g. PCM, HGE) so suggestions match your tahasusi.</li>
+<li>Combination is optional but recommended for A-level students.</li>
+</ul>
+
+<h2 id="pro">5. Pro & mobile money</h2>
+<ul>
+<li>Open the in-app Pro / payment sheet and pick a plan (day, week, month, or year — as shown in the app).</li>
+<li>Enter phone in format <code>2556XXXXXXXX</code> (or as the app instructs).</li>
+<li>Confirm; complete the USSD / mobile-money prompt on your phone.</li>
+<li>After payment, Pro should show as active (e.g. green “Active until…”). If the UI does not unlock immediately, use “I paid — unlock” / wait for sync, or reopen the app online.</li>
+</ul>
+<div class="card warn">
+<strong style="color:var(--text)">Payments</strong>
+<p style="margin:8px 0 0">Only pay through the official SKONGA AI in-app flow. Keep your payment reference (TID) if you need support.</p>
+</div>
+
+<h2 id="updates">6. Updates</h2>
+<ul>
+<li>When online, the app can check a remote <code>version.json</code> and prompt you to download a new APK.</li>
+<li>You can always get the latest file from <a href="/#download">the website download section</a>.</li>
+<li>Install the new APK <strong style="color:var(--text)">over</strong> the old one (same app id) to keep data where possible.</li>
+</ul>
+
+<h2 id="browser">7. Try in browser</h2>
+<p>Some study flows are available on the web: <a href="https://app.skonga.ai/">app.skonga.ai</a>. Full mobile features (APK, system install, some device APIs) work best on the Android app.</p>
+
+<h2 id="troubleshoot">8. Troubleshooting</h2>
+<ul>
+<li><strong style="color:var(--text)">Install blocked</strong> — enable install from your browser/file manager; use the signed release APK.</li>
+<li><strong style="color:var(--text)">Play Protect warning</strong> — confirm the download URL is official, then install.</li>
+<li><strong style="color:var(--text)">Paid but not Pro</strong> — stay online, reopen app, use unlock/sync; contact support with TID if needed.</li>
+<li><strong style="color:var(--text)">No network</strong> — chat needs internet; some profile data may still be local.</li>
+<li><strong style="color:var(--text)">Wrong suggestions</strong> — set Form and Combination correctly.</li>
+</ul>
+
+<div class="card tip">
+<strong style="color:var(--text)">Support</strong>
+<p style="margin:8px 0 0">Email <a href="mailto:hello@skonga.ai">hello@skonga.ai</a> · WhatsApp <a href="https://wa.me/255699122208">+255 699 122 208</a> · <a href="/#contact">Contact page</a></p>
+</div>
+
+<p style="margin-top:28px"><a href="/#download">↓ Download APK</a> · <a href="/faq.html">FAQ</a> · <a href="/about.html">About</a></p>
+</main>
+</div>
+
+<footer>
+<div class="container">
+<strong style="color:var(--text)">SKONGA AI</strong>
+<div class="footer-links">
+<a href="/">Home</a>
+<a href="/about.html">About</a>
+<a href="/docs.html">Docs</a>
+<a href="/faq.html">FAQ</a>
+<a href="/#contact">Contact</a>
+</div>
+<div>© <span id="year"></span> SKONGA AI · KCL Platform TZ</div>
+</div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
