@@ -9,15 +9,69 @@
 <meta name="keywords" content="SKONGA AI, AI student assistant Tanzania, Form 6 study AI, NECTA helper, homework AI chat">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://skonga-web.vercel.app/">
-<link rel="icon" type="image/png" href="assets/icon.png">
-<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://skonga-web.vercel.app/assets/icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://skonga-web.vercel.app/assets/icon.png">
+<link rel="shortcut icon" href="https://skonga-web.vercel.app/assets/icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://skonga-web.vercel.app/assets/icon.png">
+<meta name="application-name" content="SKONGA AI">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SKONGA AI">
 <meta property="og:title" content="SKONGA AI — Student Assistant">
 <meta property="og:description" content="AI study assistant for Tanzanian secondary students. Not a school ERP.">
 <meta property="og:url" content="https://skonga-web.vercel.app/">
 <meta property="og:image" content="https://skonga-web.vercel.app/assets/icon.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="SKONGA AI logo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SKONGA AI — Student Assistant">
+<meta name="twitter:image" content="https://skonga-web.vercel.app/assets/icon.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SKONGA AI","alternateName":["SKONGA AI Student Assistant"],"applicationCategory":"EducationalApplication","operatingSystem":"Android","description":"Consumer AI study assistant for Tanzanian secondary students. Not a school management ERP.","softwareVersion":"1.5","url":"https://skonga-web.vercel.app/","downloadUrl":"https://github.com/shabanihamidu19-cell/skonga-ai-v1/releases/download/build-85/SKONGA-AI-release.apk","offers":{"@type":"Offer","price":"0","priceCurrency":"TZS"}}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://skonga-web.vercel.app/#organization",
+      "name": "SKONGA AI",
+      "url": "https://skonga-web.vercel.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://skonga-web.vercel.app/assets/icon.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://github.com/shabanihamidu19-cell/skonga-ai-v1",
+        "https://www.instagram.com/skonga.ai",
+        "https://www.facebook.com/skonga.ai"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://skonga-web.vercel.app/#website",
+      "url": "https://skonga-web.vercel.app/",
+      "name": "SKONGA AI",
+      "publisher": { "@id": "https://skonga-web.vercel.app/#organization" },
+      "inLanguage": ["en", "sw"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "SKONGA AI",
+      "alternateName": ["SKONGA AI Student Assistant"],
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Android",
+      "description": "Consumer AI study assistant for Tanzanian secondary students. Not a school management ERP.",
+      "softwareVersion": "1.5",
+      "url": "https://skonga-web.vercel.app/",
+      "image": "https://skonga-web.vercel.app/assets/icon.png",
+      "downloadUrl": "https://github.com/shabanihamidu19-cell/skonga-ai-v1/releases/download/build-85/SKONGA-AI-release.apk",
+      "publisher": { "@id": "https://skonga-web.vercel.app/#organization" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TZS" }
+    }
+  ]
+}
 </script>
 <style>
 :root{--bg:#0d0f14;--card:#151925;--text:#f5f7ff;--muted:#9ba3b7;--line:rgba(255,255,255,.08);--purple:#9b5cff;--cyan:#35d9ff;--max:1120px}
@@ -78,7 +132,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);f
 <header>
 <div class="container nav">
 <a class="brand" href="#">
-<img class="brand-logo" src="assets/icon.png" width="40" height="40" alt="SKONGA AI logo">
+<img class="brand-logo" src="https://skonga-web.vercel.app/assets/icon.png" width="40" height="40" alt="SKONGA AI logo">
 <span>SKONGA AI</span>
 </a>
 <nav class="nav-links">
@@ -95,7 +149,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);f
 <main>
 <section class="hero">
 <div class="container">
-<img class="hero-logo" src="assets/icon.png" width="88" height="88" alt="SKONGA AI">
+<img class="hero-logo" src="https://skonga-web.vercel.app/assets/icon.png" width="88" height="88" alt="SKONGA AI">
 <div class="eyebrow">AI-powered student assistant</div>
 <h1>Study smarter with <span class="gradient">SKONGA AI.</span></h1>
 <p>A student-focused AI assistant for Tanzania secondary learners — ask questions, scan problems, and study with Form + combination awareness.</p>
@@ -113,81 +167,43 @@ footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);f
 <div class="eyebrow">Features</div>
 <h2>Built for how students study.</h2>
 <p class="section-lead">Tap each feature to expand. Full how-to is in <a href="docs.html" style="color:var(--cyan)">Docs</a>.</p>
-
 <div class="feature-list">
-
 <details class="feature-item" open>
 <summary>🤖 AI Chat</summary>
-<div class="feature-body">
-Ask questions in plain language and get explanations aimed at secondary school level.
-<ul>
-<li>Works for homework, revision, and “I don’t understand this topic”</li>
-<li>Better results when you name the subject and what is confusing</li>
-<li>Soft free limits; Pro unlocks more usage</li>
-</ul>
+<div class="feature-body">Ask questions in plain language and get explanations aimed at secondary school level.
+<ul><li>Works for homework, revision, and “I don’t understand this topic”</li><li>Better results when you name the subject and what is confusing</li><li>Soft free limits; Pro unlocks more usage</li></ul>
 </div>
 </details>
-
 <details class="feature-item">
 <summary>📸 Scan & Solve</summary>
-<div class="feature-body">
-Capture a written or printed question and use AI-powered help to work through it.
-<ul>
-<li>Useful when typing a long problem is slow</li>
-<li>Allow camera permission when the app asks</li>
-<li>Always learn the steps — don’t only copy the final answer</li>
-</ul>
+<div class="feature-body">Capture a written or printed question and use AI-powered help to work through it.
+<ul><li>Useful when typing a long problem is slow</li><li>Allow camera permission when the app asks</li><li>Always learn the steps — don’t only copy the final answer</li></ul>
 </div>
 </details>
-
 <details class="feature-item">
 <summary>📚 Form + Combination</summary>
-<div class="feature-body">
-Set your form (1–6). For Form 5–6, optionally choose your subject combination (tahasusi).
-<ul>
-<li>Keeps suggestions aligned with your level</li>
-<li>A-level combinations (e.g. PCM, HGE) avoid off-subject topics</li>
-<li>You can change this later in profile where available</li>
-</ul>
+<div class="feature-body">Set your form (1–6). For Form 5–6, optionally choose your subject combination (tahasusi).
+<ul><li>Keeps suggestions aligned with your level</li><li>A-level combinations (e.g. PCM, HGE) avoid off-subject topics</li><li>You can change this later in profile where available</li></ul>
 </div>
 </details>
-
 <details class="feature-item">
 <summary>💳 Pro & mobile money</summary>
-<div class="feature-body">
-Optional Pro plans via the in-app payment sheet (M-Pesa, Tigo, Airtel, Halo, etc.).
-<ul>
-<li>Phone format as shown in the app (e.g. 255…)</li>
-<li>After pay, look for green “Active until…”</li>
-<li>If unlock is slow, stay online and use sync / “I paid”</li>
-</ul>
+<div class="feature-body">Optional Pro plans via the in-app payment sheet (M-Pesa, Tigo, Airtel, Halo, etc.).
+<ul><li>Phone format as shown in the app (e.g. 255…)</li><li>After pay, look for green “Active until…”</li><li>If unlock is slow, stay online and use sync / “I paid”</li></ul>
 </div>
 </details>
-
 <details class="feature-item">
 <summary>🔄 App updates</summary>
-<div class="feature-body">
-The app can check for a newer APK when you are online.
-<ul>
-<li>Or download the latest file from this website</li>
-<li>Install the new APK over the old one</li>
-<li>Prefer signed <code style="color:#b979ff">SKONGA-AI-release.apk</code> builds</li>
-</ul>
+<div class="feature-body">The app can check for a newer APK when you are online.
+<ul><li>Or download the latest file from this website</li><li>Install the new APK over the old one</li><li>Prefer signed release APK builds</li></ul>
 </div>
 </details>
-
 <details class="feature-item">
 <summary>🇹🇿 Built for Tanzania students</summary>
-<div class="feature-body">
-Designed as a personal study assistant — not a school management ERP.
-<ul>
-<li>Secondary focus (Form 1–6)</li>
-<li>Mobile-first Android APK</li>
-<li>Independent product from KCL Platform TZ</li>
-</ul>
+<div class="feature-body">Designed as a personal study assistant — not a school management ERP.
+<ul><li>Secondary focus (Form 1–6)</li><li>Mobile-first Android APK</li><li>Independent product from KCL Platform TZ</li></ul>
 </div>
 </details>
-
 </div>
 </div>
 </section>
@@ -221,7 +237,7 @@ Designed as a personal study assistant — not a school management ERP.
 <section id="download">
 <div class="container">
 <div class="download-box">
-<img class="download-logo" src="assets/icon.png" width="64" height="64" alt="SKONGA AI">
+<img class="download-logo" src="https://skonga-web.vercel.app/assets/icon.png" width="64" height="64" alt="SKONGA AI">
 <div class="eyebrow">Get SKONGA</div>
 <h2>Start studying smarter.</h2>
 <p class="muted">Download the latest <strong style="color:var(--text)">signed release APK</strong>.</p>
@@ -239,7 +255,7 @@ Designed as a personal study assistant — not a school management ERP.
 <footer>
 <div class="container">
 <div class="footer-brand">
-<img class="footer-logo" src="assets/icon.png" width="28" height="28" alt="">
+<img class="footer-logo" src="https://skonga-web.vercel.app/assets/icon.png" width="28" height="28" alt="">
 <strong style="color:var(--text)">SKONGA AI</strong>
 </div>
 <div class="footer-links">
