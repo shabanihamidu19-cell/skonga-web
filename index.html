@@ -45,9 +45,19 @@ header{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);background:r
 section{padding:56px 0}
 .eyebrow{color:#b979ff;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
 h2{font-size:clamp(1.4rem,4vw,2rem);letter-spacing:-.03em;margin-bottom:12px}
+.section-lead{color:var(--muted);max-width:560px;margin-bottom:24px}
 .grid{display:grid;gap:12px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
 .card p,.muted{color:var(--muted);font-size:.92rem}
+.feature-list{max-width:720px;margin-top:8px}
+.feature-item{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:10px;overflow:hidden}
+.feature-item summary{list-style:none;cursor:pointer;padding:16px 18px;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.feature-item summary::-webkit-details-marker{display:none}
+.feature-item summary::after{content:"+";color:var(--cyan);font-size:1.25rem;font-weight:700;flex-shrink:0}
+.feature-item[open] summary::after{content:"–"}
+.feature-item .feature-body{padding:0 18px 16px;color:var(--muted);font-size:.92rem}
+.feature-item .feature-body ul{margin:8px 0 0 1.1rem}
+.feature-item .feature-body li{margin-bottom:6px}
 .contact-card{display:flex;align-items:center;gap:12px}
 .icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:rgba(155,92,255,.12);flex-shrink:0}
 .team-card{text-align:center;padding:22px 16px}
@@ -61,7 +71,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);f
 .footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:4px}
 .footer-logo{width:28px;height:28px;border-radius:8px;object-fit:cover}
 .footer-links{display:flex;flex-wrap:wrap;gap:14px;margin:12px 0}
-@media(min-width:640px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:1fr 1fr 1fr}.nav-links{display:flex}}
+@media(min-width:640px){.grid-2{grid-template-columns:1fr 1fr}.nav-links{display:flex}}
 </style>
 </head>
 <body>
@@ -102,10 +112,82 @@ footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);f
 <div class="container">
 <div class="eyebrow">Features</div>
 <h2>Built for how students study.</h2>
-<div class="grid grid-3" style="margin-top:24px">
-<article class="card"><h3>🤖 AI Chat</h3><p>Explanations matched to your level.</p></article>
-<article class="card"><h3>📸 Scan & Solve</h3><p>Capture a question and get guided help.</p></article>
-<article class="card"><h3>📚 Form + Combination</h3><p>Form 5–6 tahasusi-aware suggestions.</p></article>
+<p class="section-lead">Tap each feature to expand. Full how-to is in <a href="docs.html" style="color:var(--cyan)">Docs</a>.</p>
+
+<div class="feature-list">
+
+<details class="feature-item" open>
+<summary>🤖 AI Chat</summary>
+<div class="feature-body">
+Ask questions in plain language and get explanations aimed at secondary school level.
+<ul>
+<li>Works for homework, revision, and “I don’t understand this topic”</li>
+<li>Better results when you name the subject and what is confusing</li>
+<li>Soft free limits; Pro unlocks more usage</li>
+</ul>
+</div>
+</details>
+
+<details class="feature-item">
+<summary>📸 Scan & Solve</summary>
+<div class="feature-body">
+Capture a written or printed question and use AI-powered help to work through it.
+<ul>
+<li>Useful when typing a long problem is slow</li>
+<li>Allow camera permission when the app asks</li>
+<li>Always learn the steps — don’t only copy the final answer</li>
+</ul>
+</div>
+</details>
+
+<details class="feature-item">
+<summary>📚 Form + Combination</summary>
+<div class="feature-body">
+Set your form (1–6). For Form 5–6, optionally choose your subject combination (tahasusi).
+<ul>
+<li>Keeps suggestions aligned with your level</li>
+<li>A-level combinations (e.g. PCM, HGE) avoid off-subject topics</li>
+<li>You can change this later in profile where available</li>
+</ul>
+</div>
+</details>
+
+<details class="feature-item">
+<summary>💳 Pro & mobile money</summary>
+<div class="feature-body">
+Optional Pro plans via the in-app payment sheet (M-Pesa, Tigo, Airtel, Halo, etc.).
+<ul>
+<li>Phone format as shown in the app (e.g. 255…)</li>
+<li>After pay, look for green “Active until…”</li>
+<li>If unlock is slow, stay online and use sync / “I paid”</li>
+</ul>
+</div>
+</details>
+
+<details class="feature-item">
+<summary>🔄 App updates</summary>
+<div class="feature-body">
+The app can check for a newer APK when you are online.
+<ul>
+<li>Or download the latest file from this website</li>
+<li>Install the new APK over the old one</li>
+<li>Prefer signed <code style="color:#b979ff">SKONGA-AI-release.apk</code> builds</li>
+</ul>
+</div>
+</details>
+
+<details class="feature-item">
+<summary>🇹🇿 Built for Tanzania students</summary>
+<div class="feature-body">
+Designed as a personal study assistant — not a school management ERP.
+<ul>
+<li>Secondary focus (Form 1–6)</li>
+<li>Mobile-first Android APK</li>
+<li>Independent product from KCL Platform TZ</li>
+</ul>
+</div>
+</details>
+
 </div>
 </div>
 </section>
